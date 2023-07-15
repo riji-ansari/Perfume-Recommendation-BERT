@@ -4,7 +4,7 @@
 
 In our daily lives, we interact with people, and leaving a memorable impression on others can be challenging. Our sense of smell plays a significant role in creating memories. Selecting a personal perfume that not only evokes positive emotions but also reflects our unique identity can be a powerful way to make an impact. However, with the vast array of perfumes available, choosing the right one based on smell alone can be overwhelming. This project aims to address this challenge by leveraging machine learning to build a perfume recommender system based on the documented notes of perfumes.
 
-[Link to CognitiveClass.ai Project:](https://cognitiveclass.ai/courses/course-v1:IBM+GPXX068IEN+v1)
+[CognitiveClass.ai Project Tutorial:](https://cognitiveclass.ai/courses/course-v1:IBM+GPXX068IEN+v1)
 
 ## Project Description
 
