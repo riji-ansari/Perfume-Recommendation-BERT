@@ -242,13 +242,25 @@ my_perfumes
 
 # Exercise 1: Create perfume embeddings
 # Create perfume embeddings for my_perfumes using the all-MiniLM-L6-v2 model from sentence-transformer. Call it my_embeddings.
+notes = list(my_perfumes.Notes)
+
+model = SentenceTransformer('all-MiniLM-L6-v2')
+my_embeddings = model.encode(notes, show_progress_bar=True)
 
 # Exercise 2: Produce cosine similarity scores
 # Calculate cosine similarity scores between my_perfumes and the other 1604 perfumes, i.e: a similarity matrix between my_embeddings and note_embeddings.
+cosine_scores = util.cos_sim(my_embeddings, note_embeddings)
 
 # Exercise 3: Sort the perfume similarity scores
 # Create a list of (index, score) key-value pairs called my_pairs and sort my_pairs in descending order. Name the sorted list my_sorted_pairs.
+my_pairs=[]
 
+for i in range(cosine_scores.shape[0]):
+    for j in range(cosine_score.shape[1]):
+        my_pairs.append({"index": [i,j], "score": cosine_scores[i][j]})
+        
+        
+my_sorted_pairs = sorted(my_pairs, key=lambda x: x['score'], reverse=True)
 
 # For each of the perfume in my_perfumes, let's display the first 5 out of the 1604 perfumes that are most likely to be recommended.
 
